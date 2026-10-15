@@ -1,0 +1,21 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Modern Modular Portfolio Website",
+  "scripts": {
+    "dev": "serve -l 8080 .",
+    "start": "serve -l 8080 .",
+    "build": "powershell -ExecutionPolicy Bypass -File ./build.ps1",
+    "preview": "serve -l 8080 dist"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "website"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}

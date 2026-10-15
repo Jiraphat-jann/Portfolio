@@ -1,0 +1,54 @@
+<!-- ========================================================= -->
+<!-- 1. NAVIGATION BAR (Substantially Larger & Prominent)      -->
+<!-- ========================================================= -->
+<header id="navbar" class="fixed top-5 sm:top-6 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] sm:w-[calc(100%-3rem)] max-w-7xl 2xl:max-w-[1600px] z-50 glass rounded-full px-7 sm:px-10 py-4 sm:py-4.5 transition-all duration-300 shadow-2xl border border-purple-500/20 dark:border-purple-500/20 border-purple-900/20">
+  <div class="flex items-center justify-between">
+    
+    <!-- Brand / Logo (Scaled Up) -->
+    <a href="#home" class="flex items-center gap-3.5 group">
+      <div class="w-11 h-11 rounded-xl border border-purple-500/30 bg-purple-950/60 dark:bg-purple-950/60 bg-purple-100 flex items-center justify-center text-lg font-mono font-bold text-purple-300 dark:text-purple-300 text-purple-900 group-hover:border-purple-400 group-hover:scale-105 transition-all shadow-md shadow-purple-950/40">
+        ✦
+      </div>
+      <div class="font-bold text-lg sm:text-xl tracking-tight text-zinc-100 dark:text-zinc-100 text-zinc-900">
+        Jiraphat   <span class="text-purple-400 font-mono text-sm sm:text-base font-normal">/ ICT</span>
+      </div>
+    </a>
+
+    <!-- Desktop Navigation Links (Significantly Larger & Clearer) -->
+    <nav class="hidden md:flex items-center gap-3 lg:gap-5">
+      <a href="#home" class="desktop-nav-link text-base lg:text-lg font-medium text-zinc-300 hover:text-purple-300 dark:hover:text-purple-300 px-3.5 py-1.5 rounded-full hover:bg-purple-950/30 dark:hover:bg-purple-950/30 transition-all">หน้าแรก</a>
+      <a href="#about" class="desktop-nav-link text-base lg:text-lg font-medium text-zinc-300 hover:text-purple-300 dark:hover:text-purple-300 px-3.5 py-1.5 rounded-full hover:bg-purple-950/30 dark:hover:bg-purple-950/30 transition-all">เกี่ยวกับ</a>
+      <a href="#skills" class="desktop-nav-link text-base lg:text-lg font-medium text-zinc-300 hover:text-purple-300 dark:hover:text-purple-300 px-3.5 py-1.5 rounded-full hover:bg-purple-950/30 dark:hover:bg-purple-950/30 transition-all">ทักษะ</a>
+      <a href="#projects" class="desktop-nav-link text-base lg:text-lg font-medium text-zinc-300 hover:text-purple-300 dark:hover:text-purple-300 px-3.5 py-1.5 rounded-full hover:bg-purple-950/30 dark:hover:bg-purple-950/30 transition-all">ผลงาน</a>
+      <a href="#experience" class="desktop-nav-link text-base lg:text-lg font-medium text-zinc-300 hover:text-purple-300 dark:hover:text-purple-300 px-3.5 py-1.5 rounded-full hover:bg-purple-950/30 dark:hover:bg-purple-950/30 transition-all">ประสบการณ์</a>
+      <a href="#certificates" class="desktop-nav-link text-base lg:text-lg font-medium text-zinc-300 hover:text-purple-300 dark:hover:text-purple-300 px-3.5 py-1.5 rounded-full hover:bg-purple-950/30 dark:hover:bg-purple-950/30 transition-all">ใบรับรอง & อบรม</a>
+    </nav>
+
+    <!-- Right Controls (Scaled Up) -->
+    <div class="hidden md:flex items-center gap-4">
+      <!-- Minimal Large CTA Button (Black & Purple Gradient) -->
+      <a href="#contact" class="px-7 py-2.5 sm:py-3 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white text-sm sm:text-base font-bold shadow-lg shadow-purple-600/30 hover:shadow-purple-600/50 hover:scale-105 transition-all">
+        ติดต่อร่วมงาน
+      </a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <div class="flex md:hidden items-center gap-3">
+      <button id="mobile-menu-btn" type="button" aria-label="Open Menu" class="w-10 h-10 rounded-full border border-purple-500/20 text-purple-300 hover:text-white flex items-center justify-center text-sm">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Mobile Menu Drawer -->
+  <div id="mobile-menu" class="hidden md:hidden mt-4 pt-4 border-t border-purple-500/20 space-y-2">
+    <a href="#home" class="mobile-nav-link block py-3 px-4 rounded-xl text-base font-medium text-zinc-200 hover:bg-purple-950/40 hover:text-purple-200">หน้าแรก</a>
+    <a href="#about" class="mobile-nav-link block py-3 px-4 rounded-xl text-base font-medium text-zinc-200 hover:bg-purple-950/40 hover:text-purple-200">เกี่ยวกับ</a>
+    <a href="#skills" class="mobile-nav-link block py-3 px-4 rounded-xl text-base font-medium text-zinc-200 hover:bg-purple-950/40 hover:text-purple-200">ทักษะ</a>
+    <a href="#projects" class="mobile-nav-link block py-3 px-4 rounded-xl text-base font-medium text-zinc-200 hover:bg-purple-950/40 hover:text-purple-200">ผลงาน</a>
+    <a href="#experience" class="mobile-nav-link block py-3 px-4 rounded-xl text-base font-medium text-zinc-200 hover:bg-purple-950/40 hover:text-purple-200">ประสบการณ์</a>
+    <a href="#certificates" class="mobile-nav-link block py-3 px-4 rounded-xl text-base font-medium text-zinc-200 hover:bg-purple-950/40 hover:text-purple-200">ใบรับรอง & อบรม</a>
+    <a href="#contact" class="mobile-nav-link block py-3 px-4 rounded-xl text-base font-medium text-zinc-200 hover:bg-purple-950/40 hover:text-purple-200">ติดต่อ</a>
+  </div>
+</header>

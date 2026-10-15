@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="th" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Software Engineer & Developer</title>
+  <meta name="description" content="Personal Portfolio of Software Engineer & Full-Stack Developer. Minimalist, high-performance web applications and software solutions." />
+  <meta name="keywords" content="Portfolio, Software Engineer, Full-Stack, Minimal, Clean Code, Developer" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Portfolio — Software Engineer" />
+  <meta property="og:description" content="Personal Portfolio — Crafting clean, scalable, and thoughtful digital experiences." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&auto=format&fit=crop&q=80" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Prompt', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#f4f4f5',
+              100: '#e4e4e7',
+              500: '#71717a',
+              900: '#18181b',
+              950: '#09090b',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Modular Modern Minimal CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-[#08060f] text-zinc-100 transition-colors duration-300 selection:bg-purple-600 selection:text-white dark:bg-[#08060f] dark:text-zinc-100 font-sans antialiased overflow-x-hidden min-h-screen relative bg-grid">
+
+  <!-- Ambient Minimal Lighting (Black & Purple Radiant Spotlight) -->
+  <div class="ambient-spotlight"></div>
+  <div class="ambient-glow-secondary"></div>
+  <div class="ambient-glow-bottom"></div>
+
+  <!-- ========================================================= -->
+  <!-- MODULAR COMPONENTS (Loaded dynamically from components/)   -->
+  <!-- ========================================================= -->
+  
+  <!-- 1. Navigation Header (components/navbar.html) -->
+  <div id="navbar-container"></div>
+
+  <!-- 2. Hero Section (components/hero.html) -->
+  <div id="Profile-container"></div>
+
+  <!-- 3. About & Stats Section (components/about.html) -->
+  <div id="about-container"></div>
+
+  <!-- 4. Skills & Tech Stack Section (components/skills.html) -->
+  <div id="skills-container"></div>
+
+  <!-- 5. Projects Section (components/projects.html) -->
+  <div id="projects-container"></div>
+
+  <!-- 6. Experience & Education Timeline (components/experience.html) -->
+  <div id="experience-container"></div>
+
+  <!-- 7. Training & Certifications Section (components/certificates.html) -->
+  <div id="certificates-container"></div>
+
+  <!-- 8. Contact Section (components/contact.html) -->
+  <div id="contact-container"></div>
+
+  <!-- 8. Footer (components/footer.html) -->
+  <div id="footer-container"></div>
+
+  <!-- ========================================================= -->
+  <!-- FLOATING MINIMAL UI ELEMENTS                              -->
+  <!-- ========================================================= -->
+
+  <!-- Minimal Back to top button -->
+  <button id="back-to-top" type="button" aria-label="Back to top" class="fixed bottom-6 right-6 z-40 p-3.5 rounded-full glass border border-purple-500/20 text-purple-300 hover:text-white hover:border-purple-400 hover:bg-purple-950/50 shadow-xl opacity-0 pointer-events-none transition-all duration-300 hover:-translate-y-1">
+    <i class="fa-solid fa-arrow-up text-xs"></i>
+  </button>
+
+  <!-- Minimal Toast Notification -->
+  <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 px-5 py-3 rounded-full glass border border-purple-500/30 text-purple-100 text-xs font-medium shadow-2xl flex items-center gap-2.5">
+    <span class="w-2 h-2 rounded-full bg-purple-400 shadow-sm shadow-purple-500"></span>
+    <span id="toast-message">ส่งข้อความเรียบร้อยแล้ว</span>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- JAVASCRIPT LOGIC & MODULES                                -->
+  <!-- ========================================================= -->
+  <script src="assets/js/data.js"></script>
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
